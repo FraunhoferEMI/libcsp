@@ -107,8 +107,8 @@ int csp_zmqhub_init(char _addr, char * host) {
 	char url_pub[100];
 	char url_sub[100];
 
-	sprintf(url_pub, "tcp://%s:6000", host);
-	sprintf(url_sub, "tcp://%s:7000", host);
+	sprintf(url_pub, "tcp://%s:6111", host);
+	sprintf(url_sub, "tcp://%s:7111", host);
 
 	return csp_zmqhub_init_w_endpoints(_addr, url_pub, url_sub);
 }
